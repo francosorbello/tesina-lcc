@@ -2,6 +2,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
+\usepackage[spanish]{babel}
 \usepackage{biblatex}
 \addbibresource{references.bib}
 \graphicspath{ {images/} }
@@ -15,7 +16,25 @@
 
 \begin{document}
 \maketitle
-\chapter{Motivación}
-\input{chapters/motivacion.tex}
+\tableofcontents
+\chapter{Introducción}
+\section{Motivación}
+\input{chapters/introduccion/motivacion.tex}
+\section{Objetivos}
+\input{chapters/introduccion/objetivos.tex}
+
+\chapter{Ingeniería de software}
+\section{Definición de software}
+\input{chapters/ing_software/definicion.tex}
+
+\section{Metodologías}
+\input{chapters/ing_software/metodologias.tex}
+
+\section{Modelos lineales}
+\input{chapters/ing_software/modelos_lineales.tex}
+
+\section{Modelos incrementales}
+\input{chapters/ing_software/modelos_incrementales.tex}
+
 \printbibliography
 \end{document}
