@@ -1,11 +1,10 @@
-# This is a basic workflow to help you get started with Actions
+# Workflow que crea un PDF de la tesina y lo sube a GitHub Releases
 
 name: CI
 permissions:
   contents: write
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push events but only for the "main" branch
+  # Solo se ejecuta en main cuando se crea un tag
   push:
     branches: [ "main" ]
     tags:
@@ -14,30 +13,29 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
-    if: github.ref_type == 'tag'
+    if: github.ref_type == 'tag' # Solo se ejecuta si el commit tiene un tag
     permissions:
       contents: write
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout # añadir los archivos latex del repositorio al entorno de ejecución
         uses: actions/checkout@v4
-      - name: Build
+      - name: Build # buildear el PDF
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
-      - name: Copy
+      - name: Copy # copiar el PDF para subirlo como artefacto
         run: |
           mkdir out
           cp ./main.pdf ./out/tesina.pdf
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4 # subir el PDF como artefacto
         with:
           name: tesina
           path: out/tesina.pdf
       - name: Release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v2 #crear una release con el PDF
         if: github.ref_type == 'tag'
         with:
           files: out/tesina.pdf
