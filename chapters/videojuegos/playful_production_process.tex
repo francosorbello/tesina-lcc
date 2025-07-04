@@ -32,7 +32,7 @@ El proceso de desarrollo comienza en estae etapa, donde se definen una serie de 
 %
 \subsubsection{Prototipado}
 \par Realizar prototipos es una parte fundamental de esta etapa. Lemarchand recomienda empezar con a prototipar lo antes posible, enfocandose en explorar distintas ideas. El objetivo de un prototipo es encontrar una un número pequeño de mecánicas (inclusive una sola) que sea interesante o divertida. 
-\par Para ayudar en la creación de prototipos, Lemarchand define algunos conceptos de game design. Primero define una \textit{mecánica} como ``reglas y procesos en un juego que lo vuelven funcional e interactivo.''(Traducción propia) \cite{lemarchandPlayfulProductionProcess2021}. Las mecánicas crean acciones llamadas \textit{game verbs}. Algunos ejemplos son saltar, caminar o disparar. Finalmente, define \textit{player activity} como ``las formas en las que un jugador usa un game verb en particular'' (Traducción propia) \cite{lemarchandPlayfulProductionProcess2021}. Por ejemplo, un jugador puede usar la barra espaciadora para ejecutar el \textit{game verb} de saltar. O puede ser un concepto mas abstracto, como tratar de encontrar un final diferente en una historia interactiva. \textit{player activity} es ``el resultado de combinar mecánicas, game verbs y narrativa con las acciones del jugador'' (Traducción propia) \cite{lemarchandPlayfulProductionProcess2021}.
+\par Para ayudar en la creación de prototipos, Lemarchand define algunos conceptos de game design. Primero define una \textit{mecánica} como ``reglas y procesos en un juego que lo vuelven funcional e interactivo.''(Traducción propia) \cite{lemarchandPlayfulProductionProcess2021}. Las mecánicas crean acciones llamadas \textit{game verbs}. Algunos ejemplos son saltar, caminar o disparar. Finalmente, define \textit{player activity} como ``las formas en las que un jugador usa un game verb en particular'' (Traducción propia) \cite{lemarchandPlayfulProductionProcess2021}. Por ejemplo, un jugador puede usar la barra espaciadora para ejecutar el \textit{game verb} de saltar. O puede ser un concepto mas abstracto, como tratar de encontrar un final diferente en una historia interactiva. \textit{player activity} es ``el resultado de combinar mecánicas, game verbs y narrativa con las acciones del jugador'' (Traducción propia) \cite{lemarchandPlayfulProductionProcess2021}. \todo{TODO: ultima frase es redundante. Reescribir}
 \par Estos conceptos son importante porque para Lemarchand, un prototipo debe explorar un \textit{player activity} en particular para decidir si es interesante o no. Para ello, propone una serie de preguntas que un prototipo debe responder:
 \begin{itemize}
     \item ¿Qué \textit{player activity} estoy prototipando?
@@ -81,3 +81,47 @@ Un \textit{vertical slice} es una demo de alta calidad de un videojuego \cite{le
     \caption{Proceso iterativo para la creación de un \textit{vertical slice}. Extraída de \cite{lemarchandPlayfulProductionProcess2021}.}
     \label{fig:x iteracion vertical slice}
 \end{figure} 
+\par Muchos juegos se construyen a partir de un patron repetitivo, llamado \textit{game loop}. Este patrón consiste en una serie de actividades que el jugador puede realizar, como atacar, disparar, saltar, etc. Luego, los \textit{game designers} crean distintas variaciones de estas actividades para mantener el interés del jugador. Este loop se debe ver representado en el \textit{vertical slice}, ya que es una parte fundamental del juego.
+%
+\paragraph{Playtesting}
+\par Similar a otras metodologías de desarrollo, \textit{playtesting} es una parte fundamental del proceso. Este proceso debe realizarse tanto con otros miembros del equipo como con personas ajenas al proyecto. El objetivo es obtener feedback sobre el \textit{vertical slice} y evaluar si cumple con los \textit{experience goals} definidos. Para ello, Lemarchand propone una serie de prácticas:
+\begin{itemize}
+    \item \textbf{Minimizar la conversación con el jugador}: esto es útil para observar si el juego es intuitivo y entendible. 
+    \item \textbf{Utilizar auriculares}: el sonido es una parte importante de la experiencia de juego, y puede guiar al jugador con el mismo.
+    \item \textbf{Escribir los controles del juego en un papel}.
+    \item \textbf{Escribir pistas para los problemas que ya se conocen}: es posible que la demo contenga algún bug  que requiera información adicional para que el jugador pueda continuar. En este caso, es recomendable escribir una pista para que el jugador pueda seguir jugando.
+    \item \textbf{Sugerir que el jugador piense en voz alta}: el objetivo es obtener más información sobre la experiencia del jugador. Esto puede ayudar a identificar problemas que no son evidentes al observar al jugador.
+    \item \textbf{Anotar las acciones del jugador}: escribir lo que el jugador va realizando en un papel puede ayudar a identificar tanto las partes interesantes del juego como las que generan problemas.
+    \item \textbf{Realizar entrevistas luego de finalizar}: algunas preguntas recomendadas por Lemarchand son:
+    \begin{itemize}
+        \item ¿Cuál fue tu momento o interacción favorita?
+        \item ¿Cuál fue tu momento o interacción que menos te gustó?
+        \item ¿Hubo algo que quisieras hacer y que el juego no te permitiera? 
+        \item Si pudieras cambiar algo del juego, ¿qué sería?
+    \end{itemize}
+\end{itemize}
+
+\par Es importante analizar el feedback obtenido durante este proceso. Para ello, Lemarchand recomienda separar los datos en 3 categorías:
+\begin{itemize}
+    \item \textbf{Broken/must fix [roto/debe arreglarse]}: estos son problemas de \textit{game design} o bugs que impiden que el jugador tenga la experienca deseada, por lo que deben ser arreglados. Por lo general, la solución suele ser bastante obvia.
+    \item \textbf{Question/maybe fix [pregunta/quizás deba arreglarse]}: estos son elementos que quizás no están funcionando correctamente, pero que requiere mayor investigación para determinar el por qué.
+    \item \textbf{Suggestion/new idea [sugerencia/nueva idea]}: estas son sugerencias o ideas que pueden mejorar el juego, pero que no son necesarias para que el juego funcione correctamente. Por lo general, estas sugerencias se implementan en iteraciones posteriores.
+\end{itemize}
+%
+%
+\paragraph{Concentric development}
+\par Lemarchand propone utilizar \textit{concentric development} durante la etapa de pre-producción. Este estilod de desarrollo consiste en comenzar por el núcleo del juego y luego ir expandiendo con sistemas que lo complementan. Lemarchand propone 3 capas:
+\begin{itemize}
+    \item \textbf{Primary mechanics}: estas son las mecánicas fundamentales del juego. Por ejemplo, en un juego de plataformas, las mecánicas primarias se refiere al movimiento del personaje y de la cámara. A diferencia de la etapa de \textit{Ideation}, estas mecánicas deben ser lo suficientemente pulidas como para ser parte del producto final. Esto significa crear el arte, sonido y programacion y game design necesarios para considerarse completas.
+    \item \textbf{Secondary mechanics}: estas mecánicas consisten en los \textit{game verbs} mas importantes del juego, generalmente aquellos que completan el \textit{game loop}. Por ejemplo, en un juego de plataformas, las mecánicas secundarias pueden saltar sobre enemigos o recoger objetos.
+    \item \textbf{Tertiary mechanics}: estas mecánicas son las que complementan a las primarias y secundarias. Siguiendo el ejemplo del juego de plataformas, las mecánicas terciarias pueden ser las que permiten al jugador interactuar con el entorno, como abrir puertas o activar interruptores.
+\end{itemize}
+\par La ventaja de trabajar de esta forma es que al final de pre-producción, se obtiene un \textit{vertical slice} que contiene las mecánicas fundamentales del juego, y estas mecánicas estan lo suficientemente pulidas como para decidir si el proyecto debe continuar o no. Este método de trabajo también es útil durante la etapa de producción. \todo{TODO: expandir ultima frase}
+%
+%
+\subsubsection{Game Design Macro}
+\par Lemarchand define un \textit{game design macro} como ``una matriz de ideas que representa un overview del diseño del juego.'' (Traducción propia) \cite{lemarchandPlayfulProductionProcess2021}. Esta matriz enumera los aspectos más importantes del juego, sin enfocarse en los detalles. Por ejemplo, puede incluir el número de niveles, o de personajes. Este artefacto es también una extensión de los \textit{project goals} definidos en la etapa de \textit{Ideation}. El \textit{game design macro} está compuesto de 2 partes: un documento llamado \textit{game design overview} y una tabla llamada \textit{macro chart}.
+%
+\paragraph{Game Design Overview} Este documento es una visión general del proyecto, y contiene una Introducción a los elementos más importantes del juego, incluyendo mecánicas, narrativa y dirección artística. \todo[size=\tiny]{TODO: tengo que poner referencia acá? Todo lo que esta en esa seccion es del mismo libro.}
+%
+\paragraph{Macro Chart} \todo{TODO: no me gusta el tamaño de la fuente} Este documento fue originalmente ideado por el desarrollador Mark Cerny, quien lo describe como ``qué tipo de gampeplay va en cada lugar''. La idea es que esta tabla contiene los niveles del juego, las mecánicas que se utilizan en cada uno, y los fragmentos de historia que suceden al jugarlo.  
