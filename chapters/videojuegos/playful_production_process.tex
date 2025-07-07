@@ -48,7 +48,7 @@ El proceso de desarrollo comienza en estae etapa, donde se definen una serie de 
 \subsubsection{Project goals}
 \par El objetivo final de la etapa de \textit{Ideation} es definir los \textit{project goals}. La idea es que establecer objetivos claros para el proyecto ayuda a guiar el proceso de desarrollo en las siguientes etapas. Lemarchand separa los \textit{project goals} en dos categorias, \textit{experience goals} y \textit{design goals}. 
 \bigbreak
-\par Segun Lemarchand, un \textit{experience goal} es ``el tipo de experiencia que se le quiere dar al jugador, generalmente explicada en términos de la experiencia emocional.'' (Traducción propia) \cite{lemarchandPlayfulProductionProcess2021}. Ejemplos de esto puede ser la satisfacción de ganar o el miedo al jugar un juego de terror. La figura \ref{fig:x ejemplo de experience goals Lemarchand} muestra los \textit{experience goals} establecidos para Uncharted, uno de los juegos en los que el escritor trabajó.
+\par Segun Lemarchand, un \textit{experience goal} es ``el tipo de experiencia que se le quiere dar al jugador, generalmente explicada en términos de la experiencia emocional.'' (Traducción propia) \cite{lemarchandPlayfulProductionProcess2021}. Ejemplos de esto puede ser la satisfacción de ganar o el miedo al jugar un juego de terror. La figura \ref{fig:x ejemplo de experience goals Lemarchand} muestra los \textit{experience goals} establecidos para Uncharted, uno de los juegos en los que trabajó el escritor.
 %
 \begin{figure}[H]
     \centering
@@ -74,7 +74,7 @@ El proceso de desarrollo comienza en estae etapa, donde se definen una serie de 
 %
 \subsubsection{Vertical Slice}
 Un \textit{vertical slice} es una demo de alta calidad de un videojuego \cite{lemarchandPlayfulProductionProcess2021}. Tanto gráficos, sonido, mecánicas y narrativa deben estar lo suficientemente pulidos como para ser considerados parte del producto final. 
-\par Esta demo se construye iterativamente a partir de intentos anteriores, siguiendo un \hyperref[sec:modelos_evolutivos]{modelo evolutivo}. Para ello, se define una mecánica, se crea un prototipo para probarla, se realiza \textit{playtesting} y se evalúa el resultado. Al final de cada iteración se revisa si el prototipo cumple con los \textit{experience goals} definidos, y si es necesario, se realizan cambios. Este proceso se repite hasta que se obtiene un \textit{vertical slice} que cumple con los objetivos del proyecto.
+\par Esta demo se construye iterativamente a partir de intentos anteriores, siguiendo un \hyperref[sec:modelos_evolutivos]{modelo evolutivo}. Para ello, se definen una  o varias mecánicas, se crea un prototipo para probarlas, se realiza \textit{playtesting} y se evalúa el resultado. Al final de cada iteración se revisa si el prototipo cumple con los \textit{experience goals} definidos, y si es necesario, se realizan cambios. Este proceso se repite hasta que se obtiene un \textit{vertical slice} que cumple con los objetivos del proyecto.
 \begin{figure}[h]
     \centering
     \includegraphics[scale=0.5]{vertical_slice_iteration.png}
@@ -116,12 +116,77 @@ Un \textit{vertical slice} es una demo de alta calidad de un videojuego \cite{le
     \item \textbf{Secondary mechanics}: estas mecánicas consisten en los \textit{game verbs} mas importantes del juego, generalmente aquellos que completan el \textit{game loop}. Por ejemplo, en un juego de plataformas, las mecánicas secundarias pueden saltar sobre enemigos o recoger objetos.
     \item \textbf{Tertiary mechanics}: estas mecánicas son las que complementan a las primarias y secundarias. Siguiendo el ejemplo del juego de plataformas, las mecánicas terciarias pueden ser las que permiten al jugador interactuar con el entorno, como abrir puertas o activar interruptores.
 \end{itemize}
-\par La ventaja de trabajar de esta forma es que al final de pre-producción, se obtiene un \textit{vertical slice} que contiene las mecánicas fundamentales del juego, y estas mecánicas estan lo suficientemente pulidas como para decidir si el proyecto debe continuar o no. Este método de trabajo también es útil durante la etapa de producción. \todo{TODO: expandir ultima frase}
+\par La ventaja de trabajar de esta forma es que al final de pre-producción, se obtiene un \textit{vertical slice} que contiene las mecánicas fundamentales del juego, y estas mecánicas estan lo suficientemente pulidas como para decidir si el proyecto debe continuar o no. Este método de trabajo también es útil durante la etapa de producción. \todo{expandir ultima frase}
 %
 %
 \subsubsection{Game Design Macro}
 \par Lemarchand define un \textit{game design macro} como ``una matriz de ideas que representa un overview del diseño del juego.'' (Traducción propia) \cite{lemarchandPlayfulProductionProcess2021}. Esta matriz enumera los aspectos más importantes del juego, sin enfocarse en los detalles. Por ejemplo, puede incluir el número de niveles, o de personajes. Este artefacto es también una extensión de los \textit{project goals} definidos en la etapa de \textit{Ideation}. El \textit{game design macro} está compuesto de 2 partes: un documento llamado \textit{game design overview} y una tabla llamada \textit{macro chart}.
 %
-\paragraph{Game Design Overview} Este documento es una visión general del proyecto, y contiene una Introducción a los elementos más importantes del juego, incluyendo mecánicas, narrativa y dirección artística. \todo[size=\tiny]{TODO: tengo que poner referencia acá? Todo lo que esta en esa seccion es del mismo libro.}
+\paragraph{Game Design Overview} Este documento es una visión general del proyecto, y contiene una Introducción a los elementos más importantes del juego, incluyendo mecánicas, narrativa y dirección artística. \todo[size=\tiny]{tengo que poner referencia acá? Todo lo que esta en esa seccion es del mismo libro.}
 %
-\paragraph{Macro Chart} \todo{TODO: no me gusta el tamaño de la fuente} Este documento fue originalmente ideado por el desarrollador Mark Cerny, quien lo describe como ``qué tipo de gampeplay va en cada lugar''. La idea es que esta tabla contiene los niveles del juego, las mecánicas que se utilizan en cada uno, y los fragmentos de historia que suceden al jugarlo.  
+\paragraph{Macro Chart} \todo{no me gusta el tamaño de la fuente} Este documento fue originalmente ideado por el desarrollador Mark Cerny, quien lo describe como ``qué tipo de gameplay va en cada lugar'' (Traducción propia) \cite{academyofinteractivearts&sciencesDICESummit20022012}. La idea es que esta tabla contiene los niveles del juego, las mecánicas que se utilizan en cada uno, y los fragmentos de historia que suceden al jugar esa sección.
+%
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{macro_chart.png}
+    \caption{\textit{Macro chart} propuesto por Lemarchand. Extraída de \cite{lemarchandPlayfulProductionProcess2021}.}
+    \label{fig:x macro chart}
+\end{figure}
+%
+\par Las columnas \ref{fig:x macro chart} no son definitivas, sino que pueden variar dependiendo del proyecto. Sin embargo, Lemarchand pone énfasis en las siguientes:
+\begin{itemize}
+    \item \textbf{Player goal}: Lemarchand explica el concepto de \textit{autotelism}(``autolelismo'' en español). Este término, aplicado a videojuegos, se refiere a que cuando una persona juega un juego, establece objetivos para sí mismo basado en lo que el videojuego le permite hacer, lo que quieren hacer, lo que entienden que pueden hacer y lo que han experimentdado de juegos similares \cite{lemarchandPlayfulProductionProcess2021}. En base a esta información, en la columna de \textit{player goal} se debe escribir el objetivo que el jugador debe cumplir en cada sección del juego. Un ejemplo de esto puede ser ``llegar al final del nivel'' o ``derrotar al jefe''.
+    \item \textbf{Design goal}: a diferencia del \textit{player goal}, este objetivo está orientado a los \textit{game designers}, y consiste en lo que se desea lograr en términos de mecánicas y narrativa. Por ejemplo, ``introducir la mecánica de saltar'' o ``presentar un nuevo personaje''.
+    \item \textbf{Emotional beat}: Esta columna describe lo que se desea que el jugador sienta al jugar esa sección del juego. Por ejemplo, ``sorpresa'' o ``alegría''.
+\end 
+{itemize}
+\par Lemarchand llama \textit{sequences}(``secuencias'' en español) a las filas de la tabla, donde cada una representa una sección del juego. Lemarchand propone una serie de conceptos que ayudan a definir su orden: \todo{reescribir} %TODO: reescribir
+\begin{itemize}
+    \item \textbf{Secuenciar gameplay}: para Lemarchand, un buen punto de partida es considerar el orden en que se introducen las mecánicas del juego \cite{lemarchandPlayfulProductionProcess2021}. Por lo general, los \textit{game designers} crean secuencias que añaden mecánicas y dificultad progresivamente.
+    \item \textbf{Secuenciar narrativa}: otra herramienta para definir el orden de las secciones es considerar la narrativa del juego. Por ejemplo, es necesario presentar a los personajes, el mundo en el que se desarrolla la historia, y los conflictos que deben resolver. Esto puede ayudar a definir el orden de las secciones del juego.
+    \item \textbf{Secuenciar espacio}: otra forma de ordenar las secciones es considerar el espacio en el que suceden, especialmente si el juego está separado en niveles. Lemarchand destaca que crear espacios es una tarea que requiere mucho trabajo, por lo que es importante definir su orden y buscar maneras de reutilizar espacios.
+\end{itemize}
+\par Por otro lado, es importante considerar la duración de cada sección. Por ejemplo, para juegos grandes como \textit{Uncharted}, cada sección representa 15 minutos de juego. Para proyectos más pequeños cada sección puede durar entre 1 y 5 minutos. \todo{no se donde meter esto} %TODO: no se donde meter esto
+\par Finalmente, para completar el \textit{macro chart} se deben añadir el resto de pantallas importantes, como el menú principal, el menú de pausa y opciones, y las pantallas de \textit{game over} \footnote{Pantalla que aparece cuando el jugador pierde en el juego.}, de carga y créditos.
+%
+%
+\subsubsection{Schedule}
+\par Durante pre-producción, el proceso de desarrollo es iterativo y no sigue un cronograma fijo. En cambio, para la etapa de producción, es imperativo programar el progreso de desarrollo mediante un \textit{schedule} (cronograma en español).
+\par Para comenzar este proceso, Lemarchand recomienda calcular lo que llama \textit{person-hour}. Este recurso consiste en la cantidad de horas que un miembro del equipo dedica al proyecto. El valor se calcula en base a la cantidad de semanas que se dedicarán al proceso de producción, el número de miembros del equipo y la cantidad de horas que cada uno dedica durante la semana.
+\begin{equation}
+    T = N \times P \times W
+\end{equation}
+
+donde:
+\begin{itemize}
+    \item $T$ = Total de \textit{person-hours} disponibles para el proyecto.
+    \item $N$ = Número de miembros del equipo.
+    \item $P$ = Horas-persona que cada miembro trabajará en una semana promedio.
+    \item $W$ = Número de semanas dedicadas a producción.
+\end{itemize}
+\par Por ejmplo, para un equipo de 3 personas, que dedican 20 horas a la semana, durante 10 semanas, el total de \textit{person-hours} disponibles es:
+\begin{equation}
+    T = 3 \times 20 \times 10 = 600
+\end{equation}
+\par Luego, este número se compara con el número de \textit{person-hours} que se estima que se necesitan para completar todos los items del \textit{macro chart}, además de otras tareas como escribir dialogos, participar en reuniones, o realizar \textit{playtests}.
+\par Lemarchand recomienda comenzar con una tabla que contenga las tareas a realizar en conjunto con las siguientes columnas:
+\begin{itemize}
+    \item \textbf{Priority (prioridad)}: Esta columna indica la prioridad de cada tarea. Lemarchand propone 3 niveles:
+    \begin{itemize}
+        \item Priority 1 (prioridad 1): tareas obligatorias, que deben completarse para que el juego funcione correctamente. Por ejemplo, el movimiento del personaje, junto a sus animaciones, controles y sonidos.
+        \item Priority 2 (prioridad 2): tareas que son importantes, pero que no son necesarias para que el juego funcione correctamente. Por ejemplo, los \textit{game verbs} utilizados por el jugador para interactuar con el mundo, como ``hablar'' o ``tirar objeto''.
+        \item Priority 3 (prioridad 3): tareas que son opcionales, pero que pueden mejorar la experiencia del jugador. Por ejemplo, animaciones adicionales u objetos del entorno de juego.  
+    \end{itemize}
+    \item \textbf{Hours estimated (horas estimadas)}: Esta columna indica la cantidad de horas que se estima que se necesitan para completar cada tarea. Para Lemarchand, esta columna sólo puede tomar los valores de 1, 2, 4 u 8 horas. Aquellas tareas pequeñas se pueden agrupar en una sola, y las tareas que tomen más de 8 horas deben dividirse en subtareas más pequeñas. El objetivo es reducir la incertidumbre de las estimaciones, y que cada tarea sea lo suficientemente pequeña como para que se pueda estimar con precisión. 
+    \item \textbf{Member assigned (miembro asignado)}: Esta columna indica el miembro del equipo que se encargará de cada tarea. Lemarchand recomienda asignar tareas a un solo miembro, ya que esto ayuda a evitar confusiones y conflictos.
+\end{itemize} 
+%
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{schedule_example.png}
+    \caption{Ejemplo de un \textit{schedule}. Extraída de \cite{lemarchandPlayfulProductionProcess2021}.}
+    \label{fig:x schedule ejemplo}
+\end{figure}
+%
+\par Cabe destacar que esta comparación entre \textit{person-hours} disponibles y las horas estimadas para completar las tareas no es una estimación precisa, sino que es una forma de tener una idea general de si el proyecto es viable o no.
+
