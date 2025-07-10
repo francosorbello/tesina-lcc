@@ -34,6 +34,7 @@ La tarea del \emph{Scrum Master} es establecer las prácticas de Scrum y asegura
 \par Scrum busca promover una cultura de mejora continua, donde el equipo pueda aprender de sus experiencias y mejorar a futuro \cite{excelgchukwurahELEVATINGTEAMPERFORMANCE2024}. Es por esto que se establecen varios eventos que ayudan al equipo a mantenerse enfocado y en constante evolución.
 %
 \subsubsection{Sprints}
+\label{sec:sprint}
 \par Las tareas del equipo se dividen en pequeñas iteraciones llamadas \emph{sprints}, generalmente durando un máximo de 4 semanas. El objetivo es que cada sprint produzca incrementalmente un producto usable, el cual puede ser presentado a un \emph{stakeholder} \cite{bartoszScrumVideoGames2023}.
 \par Durante un \emph{Sprint} no pueden realizarse cambios a las tareas. El scope del próximo \emph{Sprint} puede ser renegociado en base a lo aprendido en el actual. Sólo un \emph{Product Owner} puede cancelar un \emph{Sprint}, en caso de que sea necesario.
 %
@@ -71,11 +72,25 @@ Evento final que concluye el \emph{Sprint}. El \emph{Scrum Team} evalúa el prog
 Objetivo del \emph{Sprint actual}, creado en el \emph{Sprint Planning}. Las tareas del \emph{Sprint Backlog} se deciden en torno a esta meta.
 %
 \subsubsection{Increment}
-\par Artefacto que representa un paso hacia el \emph{Product Goal}. Son aditivos, es decir que se construyen en base a \emph{Increments} anteriores. Se presentan durante el \emph{Sprint Review} como evidencia empírica del trabajo realizado.
-\par Los incrementos se crean cuando un ítem del \emph{Product Backlog} cumple el \emph{Definition of Done}.
+\par Artefacto que representa un paso hacia el \emph{Product Goal}. Son aditivos, es decir que se construyen en base a \emph{Increments} anteriores. Se presentan durante el \emph{Sprint Review} como evidencia empírica del trabajo realizado. Los incrementos se crean cuando un ítem del \emph{Product Backlog} cumple el \emph{Definition of Done}.
 %
 \subsubsection{Definition of Done}
 Este artefacto describe los estándares de calidad a los que debe llegar el trabajo actual para ser considerado un \emph{Increment}.
+%
+\subsubsection{Story Point}
+\par Los \emph{Story Points} son una unidad de medida que se utiliza para estimar el esfuerzo necesario para completar una tarea. En Scrum, se utilizan para medir la complejidad y el tamaño relativo de las tareas en el \emph{Product Backlog}. Los equipos asignan puntos a cada tarea en función de su dificultad, lo que les permite priorizar y planificar mejor el trabajo \cite{montegalianoImplantarScrumCon2016,canosaferreiroSCRUMTeoriaImplementacion2024}. 
+%
+\subsubsection{Burndown Chart}
+\label{sec:burndown_chart}
+\par Gráfico que muestra el progreso del equipo durante un periodo de tiempo. En Scrum, se utiliza para visualizar el trabajo restante en un \emph{Sprint} (llamado \textit{Sprint burndown}) o en un proyecto completo (llamado \textit{release burndown}). El eje X representa el tiempo, mientras que el eje Y muestra la cantidad de trabajo restante, generalmente medido en \emph{story points} o en horas de trabajo \cite{montegalianoImplantarScrumCon2016,canosaferreiroSCRUMTeoriaImplementacion2024}. 
+%
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=.49\textwidth]{burndown_sprint.png}
+    \includegraphics[width=.49\textwidth]{burndown_release.png}
+    \caption{Ejemplo de un \textit{sprint burndown} (izquierda) y un \textit{release burndown} (derecha). Extraída de \cite{montegalianoImplantarScrumCon2016}.}
+    \label{fig:x sprint burndown ejemplo}
+\end{figure}
 %
 %
 \subsection{Dificultades de Scrum}
