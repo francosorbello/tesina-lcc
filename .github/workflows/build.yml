@@ -34,6 +34,13 @@ jobs:
         with:
           name: tesina
           path: out/tesina.pdf
+      - name: UploadToDrive
+        uses: Jumbo810/Upload_Github_Artifacts_TO_GDrive@v2.3.1
+        with: 
+          target: out/tesina.pdf
+          credentials: ${{ secrets.GOOGLE_CREDENTIALS }}
+          parent_folder_id: ${{ secrets.GOOGLE_PARENT_FOLDER_ID }}
+          child_folder: ${{  github.ref_name }}
       - name: Release
         uses: softprops/action-gh-release@v2 #crear una release con el PDF
         if: github.ref_type == 'tag'
