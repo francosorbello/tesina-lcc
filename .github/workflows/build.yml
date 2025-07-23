@@ -40,7 +40,7 @@ jobs:
           target: out/tesina.pdf
           credentials: ${{ secrets.GOOGLE_CREDENTIALS }}
           parent_folder_id: ${{ secrets.GOOGLE_PARENT_FOLDER_ID }}
-          child_folder: ${{  github.ref_name }}
+          name: ${{  github.ref_name }}.pdf
       - name: Release
         uses: softprops/action-gh-release@v2 #crear una release con el PDF
         if: github.ref_type == 'tag'
