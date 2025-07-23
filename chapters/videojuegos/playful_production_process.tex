@@ -18,7 +18,7 @@
 El proceso de desarrollo comienza en estae etapa, donde se definen una serie de objetivos llamados \textit{player experience goals}. Este concepto es propuesto por Fullerton, que los define como ``una serie de objetivos propuestos por el game designer, que indican el tipo de experiencia que los jugadores tendran durante el videojuego." \cite{fullertonGameDesignWorkshop2008} (Traducción propia).
 \par Ejemplos de estos objetivos son ``los jugadores sentirán curiosidad por explorar un universo desconocido.'' o ``los jugadores colaborarán para sobrevivir un mundo post apocalíptico.''. Para establecer estos objetivos, Lemarchand propone una serie de herramientas:
 \begin{itemize}
-    \item Brainstorming: activadad grupal o individual donde se generan ideas espontaneamente. Lemarchand recomienda enfocarse en la cantidad de ideas, sin preocuparse por su calidad, resaltando la importancia de escribir todas las ideas, incluso las que parecen malas o irrelevantes.
+    \item Brainstorming: activadad grupal o individual donde se generan ideas espontáneamente. Lemarchand recomienda enfocarse en la cantidad de ideas, sin preocuparse por su calidad, resaltando la importancia de escribir todas las ideas, incluso las que parecen malas o irrelevantes.
     \item Mind mapping: esta técnica consiste en escribir una idea central y luego conectar ideas relacionadas. 
     \begin{figure}[H]
         \centering
@@ -31,7 +31,7 @@ El proceso de desarrollo comienza en estae etapa, donde se definen una serie de 
 %
 %
 \subsubsection{Prototipado}
-\par Realizar prototipos es una parte fundamental de esta etapa. Lemarchand recomienda empezar con a prototipar lo antes posible, enfocandose en explorar distintas ideas. El objetivo de un prototipo es encontrar una un número pequeño de mecánicas (inclusive una sola) que sea interesante o divertida. 
+\par Realizar prototipos es una parte fundamental de esta etapa. Lemarchand recomienda empezar con a prototipar lo antes posible, enfocandose en explorar distintas ideas. El objetivo de un prototipo es encontrar un número pequeño de mecánicas (inclusive una sola) que sea interesante o divertida. 
 \par Para ayudar en la creación de prototipos, Lemarchand define algunos conceptos de game design. Primero define una \textit{mecánica} como ``reglas y procesos en un juego que lo vuelven funcional e interactivo.''(Traducción propia) \cite{lemarchandPlayfulProductionProcess2021}. Las mecánicas crean acciones llamadas \textit{game verbs}. Algunos ejemplos son saltar, caminar o disparar. Finalmente, define \textit{player activity} como ``las formas en las que un jugador usa un game verb en particular'' (Traducción propia) \cite{lemarchandPlayfulProductionProcess2021}. Por ejemplo, un jugador puede usar la barra espaciadora para ejecutar el \textit{game verb} de saltar. O puede ser un concepto mas abstracto, como tratar de encontrar un final diferente en una historia interactiva. \textit{player activity} es ``el resultado de combinar mecánicas, game verbs y narrativa con las acciones del jugador'' (Traducción propia) \cite{lemarchandPlayfulProductionProcess2021}. \todo{TODO: ultima frase es redundante. Reescribir}
 \par Estos conceptos son importante porque para Lemarchand, un prototipo debe explorar un \textit{player activity} en particular para decidir si es interesante o no. Para ello, propone una serie de preguntas que un prototipo debe responder:
 \begin{itemize}
@@ -64,6 +64,7 @@ El proceso de desarrollo comienza en estae etapa, donde se definen una serie de 
     \item El género del videojuego (plataforma, aventura, rol, etc.).
     \item La dirección artística del videojuego (estilo visual, música, etc.).
 \end{itemize}
+\par Finalmente, Lemarchand propone definir el público objetivo del juego. Para ello, recomienda añadir un \textit{project goal} indicando la audiencia, en el formato ``este juego está dirigido a [audiencia]''.
 %
 %
 %  -- PRE PRODUCTION --
@@ -205,4 +206,79 @@ donde:
 %
 %  -- PRODUCTION --
 %
-% \subsection{Production}
+\subsection{Production}
+\par Si el \textit{vertical slice} es aprobado, el proyecto pasa a la etapa de \textit{production} (producción en español). En esta etapa, se implementan las mecánicas y sistemas definidos en el \textit{game design macro}, y se crea el contenido del juego. Esta etapa tiene 2 hitos principales:
+\begin{itemize}
+    \item \textbf{Alpha milestone}: en este punto se considera que el juego está en estado \textit{feature complete},es decir que todas las mecánicas y sistemas del juego están implementados, al menos de forma preliminar.
+    \item \textbf{Beta milestone}: en este punto se considera que el juego está en estado \textit{content complete}, es decir que todo el contenido del juego está implementado, y sólo faltan ajustes finales y corrección de errores.
+\end{itemize}
+\par En esta sección se profundiza sobre estos hitos, además de las herramientas que Lemarchand propone para esta etapa.
+%
+%
+\subsubsection{Formal playtesting}
+\par Antes de expandir sobre las fases de \textit{Alpha} y \textit{Beta}, Lemarchand introduce el concepto de \textit{formal playtesting}. Comenzando cerca del final de la fase de \textit{Alpha}, Lemarchand propone realizar eventos regulares de \textit{playtesting}, donde se busca obtener datos rigurosos sobre la experiencia del jugador. Este evento se diferencia del \textit{playtesting} informal que se realiza durante la etapa de \textit{Pre-production}, introduciendo una nueva serie de prácticas y herramientas:
+\paragraph{Formal Playtest Survey} Se introduce una encuesta que se le entrega al jugador luego de jugar el videojuego. Esta encuesta contiene preguntas sobre la experiencia del jugador, y permite obtener datos cuantitativos y cualitativos sobre el juego. Lemarchand recomienda estructurar las preguntas utilizando la escala Likert, en la cual la respuesta se presenta en una escala gradual, generalmente de 1 a 5, donde 1 representa la respuesta más negativa y 5 la más positiva. La figura \ref{fig:x escala Likert Lemarchand} muestra un ejemplo de este tipo de pregunta, en particular cuestionando si el jugador disfrutó de la calidad de los gráficos del juego.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{likert_scale_example.png}
+    \caption{Ejemplo de un una pregunta en formato de escala Likert. Extraída de \cite{lemarchandPlayfulProductionProcess2021}.}
+    \label{fig:x escala Likert Lemarchand}
+\end{figure}
+\paragraph{Exit interview} Luego de la encuesta, Lemarchand recomienda realizar una entrevista al jugador, esta vez con preguntas abiertas. Algunas preguntas recomendadas son:
+\begin{itemize}
+    \item ?`Cómo te hizo sentir x parte del juego?
+    \item Describe cómo realizar x acción en el juego.
+    \item Describe cómo x sistema funciona. (ej: sistema de inventario)
+    \item Describe x personaje. ?`Quién es? ?`Cómo te hizo sentir?
+    \item Describe una parte del juego donde te hayas sentido perdido.
+\end{itemize}
+\paragraph{Game Metrics} Otra herramienta propuesta por Lemarchand es recopilar datos del juego mientras los jugadores realizan el \textit{playtest}. Estos datos pueden incluir el tiempo que el jugador pasa en cada sección del juego así como las distintas acciones que realizan. Esta información pueden ayudar a identificar problemas de diseño y mejorar la experiencia del jugador. Por ejemplo, Lemarchand menciona cómo arreglaron un problema de diseño donde el jugador trataba de utilizar un sistema que permite escalar ciertas estructuras en las zonas incorrectas. Para ello, almacenaron los lugares donde los jugadores saltaban y luego observaban si estos lugares eran los correctos o no.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{jump_metrics_example.png}
+    \caption{Ejemplo de métricas en el juego \textit{Uncharted}. Las circunferencias indican los lugares donde el jugador realizó saltos. Extraída de \cite{lemarchandPlayfulProductionProcess2021}.}
+    \label{fig:x metricas de salto Uncharted Lemarchand}
+\end{figure}
+%
+%
+\subsubsection{Alpha Phase}
+\par Durante esta fase, los desarrolladores trabajan en completar las mecánicas y sistemas del juego. El objetivo es llegar al \textit{alpha milestone}, donde se considera que el juego esta en estado \textit{feature complete} y \textit{sequence complete}.
+\par Lemarchand define una \textit{feature}(característica en español) como una pieza de funcionalidad dentro del juego \cite{lemarchandPlayfulProductionProcess2021}. Por ejemplo, en un juego de plataformas, una \textit{feature} puede ser el sistema de salto del personaje. Por otro lado, define un \textit{content}(contenido en español) como los \textit{assets} que componene el juego, ya sean sonidos, modelos 3D, texturas, etc. \cite{lemarchandPlayfulProductionProcess2021}. Por ejemplo, en un juego de plataformas, el contenido puede ser el modelo del personaje, los enemigos y los escenarios. En base a estos datos, se define:
+\begin{itemize}
+    \item \textbf{Feature complete} Un juego se considera \textit{feature complete} cuando todas las mecánicas y sistemas del juego están implementados, al menos de forma preliminar. Lemarchand recomienda que al menos haya una de cada mecánica en el juego. Por ejemplo, si en el producto final habrá un sistema para hablar con personajes, en la fase de \textit{Alpha} debe haber al menos un personaje y una conversación con el mismo implementada. No es necesario que estén todos los personajes o conversaciones, pero si al menos uno de cada tipo.
+    \item \textbf{Sequence Complete} El juego está en estado \textit{sequence complete} cuando todos los niveles están implenentados en el juego, al menos de forma preliminar. El objetivo es que sea posible jugar de principio a fin de forma que se pueda evaluar el ritmo del proyecto \cite{lemarchandPlayfulProductionProcess2021} \todo{tengo que poner estas referencias?}. %TODO: tengo que poner estas referencias?. 
+    Para lograr este estado también se deben implementar los menús como menú principal, de pausa o pantalla de carga.
+\end{itemize}
+\par Por otro lado, Lemarchand propone diseñar el comienzo del juego en esta etapa. Esta parte del videojuego es muy importante porque es la primera impresión que el jugador tiene del mismo, por lo que debe ser lo suficientemente llamativa e interesante para que quiera seguir jugando. En esta primera parte del juego se deben introducir los controles y las mecánicas principales, además de un gancho narrativo que los mantenga interesados. \todo{reescribir ultima frase} %TODO: reescribir ultima frase
+\par Además, en esta etapa se comienza el proceso de marketing del producto. Similar a Anderson, Lemarchand recomienda un \textit{press kit} con información sobre el juego, como imagenes y videos, además datos sobre el equipo de desarrollo y el proyecto. Además, recomienda comenzar a publicitar el juego en redes sociales, si embargo no indica herramientas para llevarlo a cabo. Finalmente, coincide con Anderson en la importancia de contactar con creadores de contenido que tengan una audiencia similar a la del proyecto.
+\par Finalmente, durante esta etapa es recomendable implementar un sistema de \textit{bug tracking} (seguimiento de errores en español) que permita registrar errores dentro del juego. En particular, es importante observar:
+\begin{itemize}
+    \item Errores en los sistemas de juego, como mecánicas que no funcionan correctamente o que no son intuitivas.
+    \item Errores en el contenido del juego, como modelos 3D que no se ven bien o texturas que no se cargan correctamente.
+    \item Performance del juego, como caídas de frames o tiempos de carga largos.
+    \item Problemas de game design, como mecánicas que no son divertidas o que no cumplen con los \textit{experience goals} definidos.
+\end{itemize}
+\bigbreak
+\par Esta etapa concluye con el \textit{alpha milestone}, donde se presenta el progreso del juego tanto a personas ajenas al proyecto como al equipo de desarrollo. El equipo debe presentar la audiencia objetivo, el estado del proyecto (si pueden avanzar a la siguiente etapa o no) y los problemas conocidos del proyecto. En base a esta información, se continúa a la siguiente etapa, la fase de \textit{Beta}.
+%
+%
+\subsubsection{Beta Phase}
+\par En esta fase se busca llegar al estado \textit{content complete}. Para ello, todas las mecánicas y contenido del juego deben estar implementados lo suficientemente pulido como para ser parte del producto final. En esta etapa, tanto los niveles como las pantallas de menú deben estar completas, y el juego debe ser jugable de principio a fin. Además, se debe crear el arte para las tiendas digitales, incluyendo iconos y material promocional.
+\par Lemarchand también recomienda accionar sobre los errores de sistemas o diseño que se comenzaron a anotar durante la etapa de \textit{Alpha}. No es necesario arreglar todos los errores, pero si aquellos que son más importantes o que afectan la experiencia del jugador.
+\bigbreak
+\par Finalmente, al igual que en la etapa de \textit{Alpha}, se realiza un \textit{beta milestone}. En este evento, el equipo presenta el progreso del juego tanto a personas ajenas al proyecto como al equipo de desarrollo. El objetivo es obtener feedback sobre el progreso del proyecto y formar un plan con el que continuar a la siguiente etapa.
+%
+%
+%  -- PRODUCTION --
+%
+\subsection{Post Production}
+\par Esta etapa es la última del proceso de desarrollo, y se centra en 3 actividades: \textit{bug fixing} (arreglo de errores), \textit{polishing} (pulido) y \textit{balancing} (balance de diseño). El objetivo es preparar el juego para su lanzamiento, y asegurar que esté en un estado óptimo para los jugadores.
+\begin{itemize}
+    \item \textbf{Bug fixing}: durante esta etapa se pone un fuerte énfasis en arreglar los errores que se hayan encontrado durante el proceso de producción. El resto de tareas se detienen en favor de esta, y cada cambio se prueba exhaustivamente para asegurarse de que no se introduzcan nuevos errores.
+    \item \textbf{Polishing}: esto consiste en realizar pequeños cambios que mejoren la experiencia del jugador. Estos cambios no deben ser grandes, ya que pueden introducir nuevos errores.
+    \item \textbf{Balancing}: esta actividad consiste en ajustar las mecánicas del juego para que sean justas y divertidas. Similar al proceso de \textit{polishing}, se recomienda realizar cambios pequeños para evitar nuevos \textit{bugs}.
+\end{itemize}
+\par En base a estos cambios, se crea un artefacto llamado \textit{release candidate}, el cual se refiere a una \textit{build} del juego que se cree que está lista para ser lanzada. Para ello, el proyecto es tanto \textit{feature complete} como \textit{content complete}, y se han arreglado todos los errores conocidos, además de pasar por un proceso de \textit{polishing} y \textit{balancing}.
+\par Finalmente, se realiza un proceso exhaustivo de pruebas para asegurarse que no se encuentra ningun otro error. Si no se encuentran problemas, se obtiene el artefacto \textit{gold master}, el cual es la versión final del juego. 
+
+
