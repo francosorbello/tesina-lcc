@@ -1,0 +1,50 @@
+\par Como se mencionó anteriormente, el objetivo de esta etapa es explorar distintas mecánicas y conceptos de juego, para luego definir el \textit{vertical slice} y los \textit{project goals}. En base a esto se divide el proceso en 2 etapas; una de prototipado, donde se prueban varias ideas, y otra de iteración y creación de un \textit{vertical slice}, donde se trabaja sobre el prototipo más llamativo.
+%
+%
+\subsection{Prototipado}
+\subsubsection{Prototipo 1}
+\par Siguiendo el consejo de Anderson, el primer prototipo se realizó en el marco de la \textit{GMTK Jam} \cite{GMTKGameJam}, llevada a cabo del 30 de julio al 3 de agosto de 2025 y cuyo tema fue el concepto de \textit{loop}.
+\par En base a la idea se comenzó un juego del género \textit{endless runner}, donde el jugador recorre un mapa infinito realizando acciones como saltar parae esquivar obstáculos hasta perder. Un ejemplo de este tipo de juegos es \textit{Chrome Dino}, el cual aparece en el navegador Chrome cuando no hay conexión a internet. En este juego, el jugador controla un dinosaurio que corre por un desierto, saltando sobre cactus y esquivando pájaros hasta chocar con alguno de ellos \cite{DinosaurGame2025}.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{dinosaur_game.png}
+  \caption{Captura de pantalla de \textit{Dinosaur Game}. Extraída de \cite{DinosaurGame2025}.}
+  \label{fig:x dinosaur game} 
+\end{figure}
+\par Siguiendo este concepto, se comenzó con un prototipo donde el jugador personifica a un skater que esquiva obstáculos mientras derrapa sobre una barandilla en forma de loop. El objetivo del juego es recorrer la mayor distancia posible, mientras se esquivan obstáculos y se realizan trucos para sumar puntos.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{grind_the_grind_1.png}
+  \caption{Captura de pantalla del prototipo. El jugador derrapa sobre una barandilla en forma de loop. Creada por autor.}
+  \label{fig:x grind the grind 1} 
+\end{figure}
+\par Sin embargo, se encontraron dificultades para implementar el concepto. Si bien la acción de derrapar y realizar trucos era interesante, los obstáculos no aportaban diversión al juego. Debido a esto se decidió virar el concepto a un juego del género \textit{incremental}, donde el jugador debe derrapar y realizar trucos para sumar puntos y mejorar su skater. Los juegos incrementales se enfocan en recolectar recursos de forma pasiva para mejorar al jugador y y optimizar aún mas dicha obtención de recursos.
+\par En este caso, el objetivo del juego es obtener la mayor cantidad de puntos posibles, los cuales se consiguen realizando trucos y derrapando. Cada cierta cantidad de puntos, además de recolectando monedas, se otorga dinero al jugador que puede utilizar para mejorar el proceso. El juego presenta 3 mejoras:
+\begin{itemize}
+    \item \textbf{Trucos}: Aumenta la cantidad de puntos obtenidos por cada truco realizado.
+    \item \textbf{Derrape}: Aumenta la cantidad de puntos obtenidos por derrapar.
+    \item \textbf{Velocidad}: Aumenta la velocidad en la que se obtienen puntos al derrapar.
+\end{itemize}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{grind_the_grind_2.png}
+  \caption{Captura de pantalla del segundo prototipo. El jugador obtiene puntos al realizar acciones, y recibe dinero para comprar mejoras. Creada por autor.}
+  \label{fig:x grind the grind 2} 
+\end{figure}
+\par En el aspecto técnico, juego se desarrolló con el motor gráfico \textit{Godot} para la plataforma web y Windows. El arte y sonido se obtuvo mayormente de internet, utilizando recursos libres de derechos de autor. En particular, se utilizó arte de \textit{Kenney.nl} \cite{kenneyHomeKenney} y \textit{OpenGameArt} \cite{OpenGameArtorg}, y música de \textit{Free Music Archive} \cite{RoyaltyFreeMusic}.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{godot_1.png}
+  \caption{Captura de pantalla del proyecto en Godot. Creada por autor.}
+  \label{fig:x godot 1} 
+\end{figure}
+
+\par Una ventaja del evento en el que se participó es que al finalizar el periodo de desarrollo, los jugadores estaban invitados a calificar los juegos en distintas categorias: creatividad, diversión, narrativa, arte y sonido. Cada participante recibía una lista de juegos aleatorios para evaluar.
+\par En general, el juego recibió críticas mixtas. Algunos jugadores apreciarion el aspecto visual y sonoro del juego, pero también remarcaron que la progresión del mismo era demasiado rápida \cite{GrindGrindFollowtherules}.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{godot_1.png}
+  \caption{Calificaciones del juego presentado. Captura obtenida de \cite{GrindGrindFollowtherules}.}
+  \label{fig:x calificaciones prototipo 1} 
+\end{figure}
+\par Al finalizar el periodo de votación, se lanzó una actualización arreglando los problemas de progresión encontrados. \todo{tengo las builds en una carpeta de drive. Como lo indico?} %TODO: tengo las builds en una carpeta de drive. Como lo indico? 
