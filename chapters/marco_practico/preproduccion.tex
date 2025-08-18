@@ -43,8 +43,52 @@
 \par En general, el juego recibió críticas mixtas. Algunos jugadores apreciarion el aspecto visual y sonoro del juego, pero también remarcaron que la progresión del mismo era demasiado rápida \cite{GrindGrindFollowtherules}.
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{godot_1.png}
+  \includegraphics[width=\textwidth]{prototype_1_ratings.png}
   \caption{Calificaciones del juego presentado. Captura obtenida de \cite{GrindGrindFollowtherules}.}
   \label{fig:x calificaciones prototipo 1} 
 \end{figure}
 \par Al finalizar el periodo de votación, se lanzó una actualización arreglando los problemas de progresión encontrados. \todo{tengo las builds en una carpeta de drive. Como lo indico?} %TODO: tengo las builds en una carpeta de drive. Como lo indico? 
+%
+%
+\subsubsection{Prototipo 2}
+\par Para el segundo prototipo se volvió a participar en una \textit{game jam}, esta vez en la \textit{Godot Wild Jam 84} \cite{GodotWildJam}, realizada del 8 de agosto al 17 de agosto de 2025. En este evento, el tema a cumplir fue \textit{critters} (bicho o animal pequeño en español).
+\par El proyecto se comenzó creando un  \textit{\hyperref[sec:ideation_lemarchand]{mind map}}, comenzando por la idea de \textit{critters} y expandiendolo en distintos conceptos relacionados.
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{prototype_2_mindmap.png}
+  \caption{\textit{Mind map} creado en base al concepto de \textit{critters}. Creada por autor.}
+  \label{fig:x mindmap prototipo 2} 
+\end{figure}
+\par En base a esta exploración de ideas, se decidió realizar un juego donde el jugador controla una horda de goblins, los cuales deben eliminar enemigos para sumar compañeros a la horda y obtener mejoras.
+\par El proyecto estaba inspirado en el juego \textit{Vampire Survivors}, donde el jugador debe sobrevivir oleadas de enemigos que atacan al jugador constantemente. Por cada enemigo eliminado, el jugador recibe puntos de experiencia que puede utilizar para obtener mejoras e items y prolonguen su supervivencia.
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{vampire_survivors.png}
+  \caption{Captura de pantalla del videojuego \textit{Vampire Survivors}. Obtenida de \cite{VampireSurvivorsSteam}.}
+  \label{fig:x Vampire Survivors} 
+\end{figure}
+%
+\par Un aspecto importante del prototipo era utilizar un tipo de algoritmo llamado \textit{steering behaviors}. El objetivo de este algoritmo es crear entidades dentro de un juego que se mueven de forma autónoma, utilizando información limitada sobre su entorno para cumplir una serie de objetivos. En particular, para formar un comportamiento de horda, las entidades tienen como objetivo llegar a cierta posición mientras tratan de evitar a otras entidades que tienen a su alrededor. Dentro del juego estos comportamientos se modelan utilizando fuerzas, las cuales mueven a los goblins en distintas direcciones de forma que se cumplan los objetivos establecidos \cite{5AutonomousAgentsa,SteeringBehaviorsAutonomous}.
+\par En la figura \ref{fig:x seek repel forces} se puede observar un ejemplo de estas fuerzas. \textit{Seek force} empuja al goblin en la dirección de una posición objetivo, mientras que \textit{repel force} lo aleja de otro goblin. Estas fuerzas afectan la velocidad de la entidad, cambiando el rumbo del personaje.
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{seek_repel_example.png}
+  \caption{Ejemplo de las fuerzas que afectan a una entidad en un algoritmo de \textit{steering behaviors}. Creada por autor.}
+  \label{fig:x seek repel forces} 
+\end{figure}
+%
+\bigbreak
+\par Desafortunadamente, el prototipo presentó varias dificultades. En un principio, desarrollar el algoritmo mencionado anteriormente tomó entre 3 y 4 días. Idealmente, la mecánica principal se desarolla lo antes posible, de forma que se pueda validar si realmente es divertida o no. 
+\par Una vez se tuvo este sistema, se encontraron dificultades para generar enemigos que complementaran la mecánica principal. El mayor problema surgió de que se decidió que tanto los goblins como los enemigos recibieran daño al chocar entre ellos.
+\par Si bien el prototipo es jugable, se decidió no presentarlo en el evento. Se consideró que el juego no estaba en estado de ser probado, y que la mecánica probada no era lo suficientemente divertida.
+%
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{prototype_2_screenshot.png}
+  \caption{Captura de pantalla del segundo prototipo. Creada por autor.}
+  \label{fig:x prototipo 2 godot} 
+\end{figure}
+%
