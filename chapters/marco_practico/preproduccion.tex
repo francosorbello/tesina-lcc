@@ -47,7 +47,11 @@
   \caption{Calificaciones del juego presentado. Captura obtenida de \cite{GrindGrindFollowtherules}.}
   \label{fig:x calificaciones prototipo 1} 
 \end{figure}
-\par Al finalizar el periodo de votación, se lanzó una actualización arreglando los problemas de progresión encontrados. \todo{tengo las builds en una carpeta de drive. Como lo indico?} %TODO: tengo las builds en una carpeta de drive. Como lo indico? 
+\par Al finalizar el periodo de votación, se lanzó una actualización arreglando los problemas de progresión encontrados. El juego se puede encontrar en los siguientes enlaces:
+\begin{itemize}
+  \item Repositorio del código: \url{https://github.com/francosorbello/grind_the_grind}
+  \item Página de descarga: \url{https://followtherules.itch.io/grind-the-grind}
+\end{itemize} 
 %
 %
 \subsubsection{Prototipo 2}
@@ -91,8 +95,10 @@
   \caption{Captura de pantalla del segundo prototipo. Creada por autor.}
   \label{fig:x prototipo 2 godot} 
 \end{figure}
+\par El progreso del proyecto puede encontrarse en el siguiente repositorio: \url{https://github.com/francosorbello/godot-wild-jam-84}
 %
 \subsubsection{Prototipo 3}
+\label{sec:prototype_3}
 El tercer prototipo se desarrolló para la \textit{Mega Jam de Invierno}, una jam de 3 días llevada a cabo en Mendoza \cite{MEGAJAMInvierno}. Como otras jams, el evento requería que el juego cumpliera con un temática, en este caso \textit{agua}.
 Debido al límite de tiempo, se decidió desarrollar una novela visual. Este tipo de juegos consiste mayormente en situaciones descriptas mediante texto, generalmente acompañadas por imagenes, donde el jugador puede realizar acciones como interactuar con objetos o moverse en el espacio. Además, estas obras suelen tener un fuerte énfasis en la historia y narrativa \cite{VisualNovel2025}.
 %
@@ -114,7 +120,11 @@ Debido al límite de tiempo, se decidió desarrollar una novela visual. Este tip
 %
 \par El juego se desarrolló en Godot utilizando un plugin llamado \textit{Dialogue Manager}, el cual proporciona una serie de herramientas que facilitan la creación de un juego narrativo \cite{NathanhoadGodot_dialogue_managerPowerful}. Para la música, se utilizaron \textit{asset packs} de itch.io. Para el arte, se usaron imágenes de sitios como Pexels, Freepik y Pixabay \cite{57MillionStunning,FreepikAllinOneAI,FotosStockGratis}, las cuales están libres de derechos de autor.
 \bigbreak
-\par A diferencia de otras jams, en esta no hubo una etapa de feedback. Debido a esto, se decidió compartir el juego en grupos de desarrolladores. En general, el juego recibió críticas positivas, destacando la narrativa y la inmersión presentada al jugar.
+\par A diferencia de otras jams, en esta no hubo una etapa de feedback. Debido a esto, se decidió compartir el juego en grupos de desarrolladores. En general, el juego recibió críticas positivas, destacando la narrativa y la inmersión presentada al jugar. Se puede acceder al juego utilizando los siguientes enlaces:
+\begin{itemize}
+  \item Repositorio del juego: \url{https://github.com/francosorbello/donde-mueren-los-peces}
+  \item Link de descarga: \url{https://francosorbello.itch.io/donde-mueren-los-peces}
+\end{itemize}
 %
 \subsubsection{Prototipo 4}
 El último prototipo se desarrolló durante la \textit{Club Jam 2025}, realizada del 2 al 15 de septiembre. El evento fue organizado por estudiantes de la carrera, y fue llevada a cabo en la Facultad de Ingieniería de la UNCUYO \cite{ClubJam2025}.
@@ -133,6 +143,13 @@ El último prototipo se desarrolló durante la \textit{Club Jam 2025}, realizada
   \caption{Captura de pantalla del juego, mostrando una escena narrativa. Creada por autor.}
   \label{fig:x prototipo 4 narrativa}
 \end{figure}
+\par Para este juego, se realizaron tanto prototipos digitales como físicos. En particular, varios de los niveles se diseñaron en papel y luego se recrearon en el motor gráfico.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{prototype_4_paper.png}
+  \caption{Niveles en papel y su equivalente en el juego. Creada por autor.}
+  \label{fig:x prototipo 4 prototipo fisico}
+\end{figure}
 \bigbreak
 \par En general, el juego recibió críticas positivas, destacando la historia y las mecánicas. Sin embargo, también recibió críticas negativas en el apartado artístico, indicando una desconexión entre la temática y el aspecto visual del juego \cite{VueloKaleidoskopioFranco}.
 \begin{figure}[H]
@@ -141,3 +158,33 @@ El último prototipo se desarrolló durante la \textit{Club Jam 2025}, realizada
   \caption{Puntuación del juego en distintas categorías. Extraída de \cite{VueloKaleidoskopioFranco}.}
   \label{fig:x prototipo 4 puntuacion}
 \end{figure}
+Algunos links de interés son:
+\begin{itemize}
+  \item Repositorio del juego: \url{https://github.com/francosorbello/the-last-dance}
+  \item Página de descarga: \url{https://francosorbello.itch.io/vuelo-kaleidoskopio}
+\end{itemize}
+%
+%
+\subsection{Vertical Slice}
+\par Del feedback recibido se pueden extraer las siguientes conclusiones:
+\begin{itemize}
+  \item Los jugadores presentan interés en el aspecto narrativo de los juegos.
+  \item Los jugadores también muestran interés en el diseño sonoro y la inmersión que genera.
+  \item Los jugadores detectan discrepancias en el aspecto visual de los juegos. 
+\end{itemize}
+\par Basado en esta información, se decide continuar con el \hyperref[sec:prototype_3]{prototipo 3}, expandiendo la idea original de explorar un laberinto submarino con un nuevo sistema de movimiento, más niveles y nuevos personajes. Se eligió este proyecto porque destaca en los aspectos positivos recibidos en el feedback. \todo{expandir} %TODO: expandir
+\subsubsection{Project goals}
+\par Siguiendo lo indicado por Lemarchand, se establecen una serie de objetivos, llamados \textit{project goals}. Estos se separan en 2 categorías:
+\paragraph{Experience goals} Se refiere al tipo de experiencia que se le quiere dar al jugador. Para este juego, los \textit{experience goals son}:
+\begin{itemize}
+  \item La narrativa y la exploración del entorno son el foco del juego.
+  \item La narrativa presenta historias humanas en un entorno inhumano: el objetivo es que el jugador explore espacios misteriosos e ilógicos, pero que las historias que sucedan en ese universo se sientan cercanas.
+  \item La exploración debe ser divertida y satisfactoria: el jugador debe tener herramientas que lo motiven a descubrir el universo.
+\end{itemize}
+\paragraph{Design goals} éstas son las mecánicas que complementan a los \textit{experience goals}:
+\begin{itemize}
+  \item El juego se desarrolla para la plataforma Windows.
+  \item El juego es del género "novela visual".
+  \item La dirección artística utiliza elementos del género de terror para su ambientiación. El diseño sonoro está inspirado en juegos de terror de las primeras consolas en 3D, como la Playstation 1.
+  \item El juego está dirigido a adultos jóvenes que juegan novelas visuales o consumen juegos de terror. 
+\end{itemize}
