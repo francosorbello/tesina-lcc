@@ -166,15 +166,16 @@ Algunos links de interés son:
 %
 %
 \subsection{Vertical Slice}
-\par Del feedback recibido se pueden extraer las siguientes conclusiones:
+\par Esta etapa fue por lejos la más larga e importante del proyecto. Durante esta etapa se construyeron las bases que luego representaron el contenido del juego. 
+\par Esta etapa comenzó analizando los proyectos realizados durante la etapa de proptotipado. Del feedback recibido se extrajeron las siguientes conclusiones:
 \begin{itemize}
   \item Los jugadores presentan interés en el aspecto narrativo de los juegos.
   \item Los jugadores también muestran interés en el diseño sonoro y la inmersión que genera.
   \item Los jugadores detectan discrepancias en el aspecto visual de los juegos. 
 \end{itemize}
-\par Basado en esta información, se decide continuar con el \hyperref[sec:prototype_3]{prototipo 3}, expandiendo la idea original de explorar un laberinto submarino con un nuevo sistema de movimiento, más niveles y nuevos personajes. Se eligió este proyecto porque destaca en los aspectos positivos recibidos en el feedback. \todo{expandir} %TODO: expandir
+\par Basado en esta información, se decidió continuar con el \hyperref[sec:prototype_3]{prototipo 3}, expandiendo la idea original de explorar un laberinto submarino con un nuevo sistema de movimiento, más niveles y nuevos personajes. Se eligió este proyecto porque destaca en los aspectos positivos recibidos en el feedback. \todo{expandir} %TODO: expandir
 \subsubsection{Project goals}
-\par Siguiendo lo indicado por Lemarchand, se establecen una serie de objetivos, llamados \textit{project goals}. Estos se separan en 2 categorías:
+\par Siguiendo lo indicado por Lemarchand, se establecieron una serie de objetivos, llamados \textit{project goals}. Estos se separan en 2 categorías:
 \paragraph{Experience goals} Se refiere al tipo de experiencia que se le quiere dar al jugador. Para este juego, los \textit{experience goals son}:
 \begin{itemize}
   \item La narrativa y la exploración del entorno son el foco del juego.
@@ -188,3 +189,44 @@ Algunos links de interés son:
   \item La dirección artística utiliza elementos del género de terror para su ambientiación. El diseño sonoro está inspirado en juegos de terror de las primeras consolas en 3D, como la Playstation 1.
   \item El juego está dirigido a adultos jóvenes que juegan novelas visuales o consumen juegos de terror. 
 \end{itemize}
+
+\par El proyecto cambió mucho durante el proceso, producto de la constante iteración de ideas y mecánicas. Inicialmente, se probó siguiendo el esquema de "pantalla partida" presente en el prototipo 3, donde la mitad de la pantalla está destinada a mostrar el juego y la otra mitad narra los eventos que suceden en texto.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{prototype_3_to_preprod.png}
+\caption{Izquierda: captura del prototipo 3. Derecha: primer prototipo de preproducción.}
+\label{fig:x prototype3_to_preprod}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{visuals_v2.png}
+\caption{Captura del segundo prototipo de pre-producción, con un estilo visual similar al que se encuentra en el juego final.}
+\label{fig:x visual_prototype_2}
+\end{figure}
+
+\par En el prototipo original, el jugador se mueve seleccionando una dirección de una lista de opciones. Este sistema se reemplazó con la habilidad de navegar el espacio utilizando el teclado y mouse. Sin embargo, este esquema resultó incómodo de manejar en pantalla partida, por lo que eventualmente se mantuvo sólamente la pantalla de juego \ref{fig:x visual_prototype_3}.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{visuals_v4.png}
+\caption{Captura del prototipo de pre-producción, que elimina la pantalla compartida y mantiene la pantalla de juego.}
+\label{fig:x visual_prototype_3}
+\end{figure}
+
+\par Siguiendo el consejo de Anderson, se crearon \textit{mockups} para definir el estilo visual del juego. Se buscaron estéticas llamativas pero que fueran accesibles para una persona sin entrenamiento artístico. Eventualmente, se decidió utilizar una estética 1-bit y aprovechar efectos relacionados a la programación, como shaders y partículas.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\textwidth]{mockup.png}
+\caption{\textit{Mockups} de arte desarrollados para el proyecto.}
+\label{fig:x mockup}
+\end{figure}
+
+\par El diseño del juego también sufrio grandes cambios durante esta etapa. Originalmente, se deseaba crear niveles interconectados entre si, con secretos y caminos alternativos. Sin embargo, debido a las limitaciones de tiempo, el producto final consiste en niveles lineales, con un sólo camino posible entre objetivos. 
+
+\par Para apoyar este sistema de niveles, se desarrolló un sistema de inventario y habilidades que permitían al jugador utilizar varios items y poderes para acceder a nuevas partes del mapa. De nuevo, estos sistemas fueron rediseñados o eliminados para cumplir con las restricciones de tiempo del proyecto. Además, el juego originalmente contenía una mecánica de oxígeno, similar al prototipo en el que estaba basado. Esta mecánica pasó por varias iteraciones pero eventualmente también se eliminó.
+
+\par Lo importante a destacar es que esta etapa está marcada por un proceso fuerte de prueba y error, donde ideas pasan por varias etapas hasta llegar a un producto divertido o interesante. 
+\par Esto dificulta medir el progreso del proyecto durante esta etapa. Sin embargo, tanto Lemarchand como Anderson proponen realizar playtesting para contrarrestar esta incertidumbre.
