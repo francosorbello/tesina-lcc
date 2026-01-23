@@ -1,5 +1,5 @@
 \par Esta etapa fue por lejos la más larga e importante del proyecto. Durante esta etapa se construyeron las bases que luego representaron el contenido del juego. 
-\par Esta etapa comenzó analizando los proyectos realizados durante la etapa de Iniciación. Del feedback recibido se extrajeron las siguientes conclusiones:
+\par El primer paso fue analizar los proyectos realizados durante la etapa de Iniciación. Del feedback recibido se extrajeron las siguientes conclusiones:
 \begin{itemize}
   \item Los jugadores presentan interés en el aspecto narrativo de los juegos.
   \item Los jugadores disfrutaron del diseño de niveles, en particular del prototipo 4.
@@ -22,13 +22,13 @@
   \item La dirección artística utiliza elementos del género de terror para su ambientiación. El diseño sonoro está inspirado en juegos de terror de las primeras consolas en 3D, como la Playstation 1.
   \item El juego está dirigido a adultos jóvenes que juegan novelas visuales o consumen juegos de terror. 
 \end{itemize}
-
+\bigbreak
 \par El proyecto cambió mucho durante el proceso, producto de la constante iteración de ideas y mecánicas. Inicialmente, se probó siguiendo el esquema de "pantalla partida" presente en el prototipo 3, donde la mitad de la pantalla está destinada a mostrar el juego y la otra mitad narra los eventos que suceden en texto.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{prototype_3_to_preprod.png}
-\caption{Izquierda: captura del prototipo 3. Derecha: primer prototipo de preproducción.}
+\caption{Arriba: captura del prototipo 3. Abajo: primer prototipo de preproducción.}
 \label{fig:x prototype3_to_preprod}
 \end{figure}
 
@@ -39,7 +39,7 @@
 \label{fig:x visual_prototype_2}
 \end{figure}
 
-\par En el prototipo original, el jugador se mueve seleccionando una dirección de una lista de opciones. Este sistema se reemplazó con la habilidad de navegar el espacio utilizando el teclado y mouse. Sin embargo, este esquema resultó incómodo de manejar en pantalla partida, por lo que eventualmente se mantuvo sólamente la pantalla de juego \ref{fig:x visual_prototype_3}.
+\par En el prototipo original, el jugador se mueve seleccionando una dirección de una lista de opciones. Este sistema se reemplazó con la habilidad de navegar el espacio utilizando el teclado y mouse. Sin embargo, este esquema resultó incómodo de manejar en pantalla partida, por lo que eventualmente se mantuvo solamente la pantalla de juego \ref{fig:x visual_prototype_3}.
 
 \begin{figure}[H]
 \centering
@@ -48,7 +48,7 @@
 \label{fig:x visual_prototype_3}
 \end{figure}
 
-\par Siguiendo el consejo de Anderson, se crearon \textit{mockups} para definir el estilo visual del juego. Se buscaron estéticas llamativas pero que fueran accesibles para una persona sin entrenamiento artístico. Eventualmente, se decidió utilizar una estética 1-bit y aprovechar efectos relacionados a la programación, como shaders y partículas.
+\par Siguiendo el consejo de Anderson, se crearon \textit{mockups} para definir el estilo visual del juego. Se buscaron estéticas llamativas pero que fueran accesibles para una persona sin entrenamiento artístico. Eventualmente, se decidió utilizar una estética 1-bit y aprovechar efectos relacionados con la programación, como shaders y partículas.
 
 \begin{figure}[H]
 \centering
@@ -57,15 +57,17 @@
 \label{fig:x mockup}
 \end{figure}
 
-\par El diseño del juego también sufrio grandes cambios durante esta etapa. Originalmente, se deseaba crear niveles interconectados entre si, con secretos y caminos alternativos. Sin embargo, debido a las limitaciones de tiempo, el producto final consiste en niveles lineales, con un sólo camino posible entre objetivos. 
+\par El diseño del juego también sufrió grandes cambios durante esta etapa. Originalmente, se deseaba crear niveles interconectados entre sí, con secretos y caminos alternativos. Sin embargo, debido a las limitaciones de tiempo, el producto final consiste en niveles lineales, con un solo camino posible entre objetivos. 
 
-\par Para apoyar este sistema de niveles, se desarrolló un sistema de inventario y habilidades que permitían al jugador utilizar varios items y poderes para acceder a nuevas partes del mapa. De nuevo, estos sistemas fueron rediseñados o eliminados para cumplir con las restricciones de tiempo del proyecto. Además, el juego originalmente contenía una mecánica de oxígeno, similar al prototipo en el que estaba basado. Esta mecánica pasó por varias iteraciones pero eventualmente también se eliminó.
+\par Para apoyar este sistema de niveles, se desarrolló un sistema de inventario y habilidades que permitían al jugador utilizar varios ítems y poderes para acceder a nuevas partes del mapa. De nuevo, estos sistemas fueron rediseñados o eliminados para cumplir con las restricciones de tiempo del proyecto. Además, el juego originalmente contenía una mecánica de oxígeno, similar al prototipo en el que estaba basado. Esta mecánica pasó por varias iteraciones, pero eventualmente también se eliminó.
+%
+%
 \subsection{Playtesting y Vertical Slice}
 \par Lo importante a destacar es que esta etapa está marcada por un proceso fuerte de prueba y error, donde ideas pasan por varias etapas hasta llegar a un producto divertido o interesante. Esto dificulta medir el progreso del proyecto durante esta etapa. Sin embargo, tanto Lemarchand como Anderson proponen realizar playtesting para contrarrestar esta incertidumbre.
 \par Durante la pre-producción se realizaron 2 rondas de playtesting, cada una asociada a un vertical slice diferente. El proceso de playtesting se basó en lo establecido por Lemarchand y Anderson.
 \begin{enumerate}
-  \item Los jugadores obtenían acceso a un ejecutable del juego, el cual descargaban desde la página web itch.io. La ventaja de esto es que es posible restringir el accceso mediante contraseña, de forma que sólo los participantes tuvieran acceso al juego.
-  \item Si bien no era obligatorio, los jugadores podían subir grabaciones de la pantalla del juego. Otr opción era establecer una reunión virtual con el jugador, para que compartiera pantalla mientras jugaba.
+  \item Los jugadores obtenían acceso a un ejecutable del juego, el cual descargaban desde la página web itch.io. La ventaja de esto es que es posible restringir el acceso mediante contraseña, de forma que solo los participantes tuvieran acceso al juego.
+  \item Si bien no era obligatorio, los jugadores podían subir grabaciones de la pantalla del juego. Otra opción era establecer una reunión virtual con el jugador, para que compartiera pantalla mientras jugaba.
   \item Al finalizar la demo, el jugador era redireccionado a una encuesta. Este formulario seguía los lineamientos establecidos por Lemarchand. Primero se presentaban preguntas en formato escala de Likert, evaluando distintos sistemas del juego. Luego, se encontraba una sección de preguntas abiertas, donde el jugador podía opinar sobre distintos temas.
 \end{enumerate}
 
@@ -78,7 +80,7 @@
 
 \subsubsection{Vertical Slice 1 (Mecánicas)}
 \par El primer vertical slice fue creado para probar las mecánicas del juego. En particular, se quería analizar si el juego era intuitivo y divertido de jugar. El prototipo consistía una serie de niveles con distintos obstáculos a superar. La encuesta también preguntaba sobre el apartado artístico y sonoro del juego. Este prototipo también se mostró en un evento presencial, donde también se obtuvo feedback del juego. En total, 10 personas jugaron el juego y 2 completaron la encuesta, además de grabar su pantalla mientras jugaban.
-\par En general, la respuesta de los jugadores fue positiva, pero se marcaron algunas correciones a realizar. Varias veces se mencionó que algunos elementos visuales no correspondían con el estilo artístico. Además, algunos puzzles no eran divertidos de resolver. Estos problemas se arreglaron en versiones subsecuentes del juego.
+\par En general, la respuesta de los jugadores fue positiva, pero se marcaron algunas correcciones a realizar. Varias veces se mencionó que algunos elementos visuales no correspondían con el estilo artístico. Además, algunos puzzles no eran divertidos de resolver. Estos problemas se arreglaron en versiones subsecuentes del juego.
 \bigbreak
 \par Se puede acceder a la encuesta,las grabaciones y a las respuestas desde el siguiente link:
 \url{https://drive.google.com/drive/folders/1PkKxrMDSrUW9F5Ledvs-8v5aCfR2Op5h?usp=sharing}

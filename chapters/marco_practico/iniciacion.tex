@@ -4,7 +4,7 @@
 \subsection{Prototipado}
 \subsubsection{Prototipo 1}
 \par Siguiendo el consejo de Anderson, el primer prototipo se realizó en el marco de la \textit{GMTK Jam} \cite{GMTKGameJam}, llevada a cabo del 30 de julio al 3 de agosto de 2025 y cuyo tema fue el concepto de \textit{loop}.
-\par En base a la idea se comenzó un juego del género \textit{endless runner}, donde el jugador recorre un mapa infinito realizando acciones como saltar parae esquivar obstáculos hasta perder. Un ejemplo de este tipo de juegos es \textit{Chrome Dino}, el cual aparece en el navegador Chrome cuando no hay conexión a internet. En este juego, el jugador controla un dinosaurio que corre por un desierto, saltando sobre cactus y esquivando pájaros hasta chocar con alguno de ellos \cite{DinosaurGame2025}.
+\par En base a la idea se comenzó un juego del género \textit{endless runner}, donde el jugador recorre un mapa infinito realizando acciones como saltar y esquivar obstáculos hasta perder. Un ejemplo de este tipo de juegos es \textit{Chrome Dino}, el cual aparece en el navegador Chrome cuando no hay conexión a internet. En este juego, el jugador controla un dinosaurio que corre por un desierto, saltando sobre cactus y esquivando pájaros hasta chocar con alguno de ellos \cite{DinosaurGame2025}.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{dinosaur_game.png}
@@ -18,8 +18,8 @@
   \caption{Captura de pantalla del prototipo. El jugador derrapa sobre una barandilla en forma de loop. Creada por autor.}
   \label{fig:x grind the grind 1} 
 \end{figure}
-\par Sin embargo, se encontraron dificultades para implementar el concepto. Si bien la acción de derrapar y realizar trucos era interesante, los obstáculos no aportaban diversión al juego. Debido a esto se decidió virar el concepto a un juego del género \textit{incremental}, donde el jugador debe derrapar y realizar trucos para sumar puntos y mejorar su skater. Los juegos incrementales se enfocan en recolectar recursos de forma pasiva para mejorar al jugador y y optimizar aún mas dicha obtención de recursos.
-\par En este caso, el objetivo del juego es obtener la mayor cantidad de puntos posibles, los cuales se consiguen realizando trucos y derrapando. Cada cierta cantidad de puntos, además de recolectando monedas, se otorga dinero al jugador que puede utilizar para mejorar el proceso. El juego presenta 3 mejoras:
+\par Sin embargo, se encontraron dificultades para implementar el concepto. Si bien la acción de derrapar y realizar trucos era interesante, los obstáculos no aportaban diversión al juego. Debido a esto se decidió virar el concepto a un juego del género \textit{incremental}, donde el jugador debe derrapar y realizar trucos para sumar puntos y mejorar su skater. En los juegos incrementales, el jugador obtiene algún recurso (como dinero o puntos) de forma pasiva. Luego, puede utilizar este mismo recurso para comprar habilidades le proporcionan beneficios extra(por ejemplo: recolectar recursos más rápido, multiplicar la cantidad obtenida, etc.).
+\par En este caso, el objetivo del juego es obtener la mayor cantidad de puntos posibles, los cuales se consiguen realizando trucos y derrapando. Cada cierta cantidad de puntos, además de recolectando monedas, se otorga dinero al jugador que puede utilizar para comprar habilidades. El juego presenta 3 mejoras:
 \begin{itemize}
     \item \textbf{Trucos}: Aumenta la cantidad de puntos obtenidos por cada truco realizado.
     \item \textbf{Derrape}: Aumenta la cantidad de puntos obtenidos por derrapar.
@@ -39,8 +39,8 @@
   \label{fig:x godot 1} 
 \end{figure}
 
-\par Una ventaja del evento en el que se participó es que al finalizar el periodo de desarrollo, los jugadores estaban invitados a calificar los juegos en distintas categorias: creatividad, diversión, narrativa, arte y sonido. Cada participante recibía una lista de juegos aleatorios para evaluar.
-\par En general, el juego recibió críticas mixtas. Algunos jugadores apreciarion el aspecto visual y sonoro del juego, pero también remarcaron que la progresión del mismo era demasiado rápida \cite{GrindGrindFollowtherules}.
+\par Una ventaja del evento en el que se participó es que al finalizar el periodo de desarrollo, los jugadores estaban invitados a calificar los juegos en distintas categorías: creatividad, diversión, narrativa, arte y sonido. Cada participante recibía una lista de juegos aleatorios para evaluar.
+\par En general, el juego recibió críticas mixtas. Algunos jugadores apreciaron el aspecto visual y sonoro del juego, pero también remarcaron que la progresión del mismo era demasiado rápida \cite{GrindGrindFollowtherules}.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{prototype_1_ratings.png}
@@ -56,16 +56,16 @@
 %
 \subsubsection{Prototipo 2}
 \par Para el segundo prototipo se volvió a participar en una \textit{game jam}, esta vez en la \textit{Godot Wild Jam 84} \cite{GodotWildJam}, realizada del 8 de agosto al 17 de agosto de 2025. En este evento, el tema a cumplir fue \textit{critters} (bicho o animal pequeño en español).
-\par El proyecto se comenzó creando un  \textit{\hyperref[sec:ideation_lemarchand]{mind map}}, comenzando por la idea de \textit{critters} y expandiendolo en distintos conceptos relacionados.
+\par El proyecto se comenzó creando un  \textit{\hyperref[sec:ideation_lemarchand]{mind map}}, comenzando por la idea de \textit{critters} y expandiéndolo en distintos conceptos relacionados.
 %
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{prototype_2_mindmap.png}
-  \caption{\textit{Mind map} creado en base al concepto de \textit{critters}. Creada por autor.}
+  \caption{\textit{Mind map} creado basándose en el concepto de \textit{critters}. Creada por autor.}
   \label{fig:x mindmap prototipo 2} 
 \end{figure}
 \par En base a esta exploración de ideas, se decidió realizar un juego donde el jugador controla una horda de goblins, los cuales deben eliminar enemigos para sumar compañeros a la horda y obtener mejoras.
-\par El proyecto estaba inspirado en el juego \textit{Vampire Survivors}, donde el jugador debe sobrevivir oleadas de enemigos que atacan al jugador constantemente. Por cada enemigo eliminado, el jugador recibe puntos de experiencia que puede utilizar para obtener mejoras e items y prolonguen su supervivencia.
+\par El proyecto estaba inspirado en el juego \textit{Vampire Survivors}, donde el jugador debe sobrevivir oleadas de enemigos que atacan al jugador constantemente. Por cada enemigo eliminado, el jugador recibe puntos de experiencia que puede utilizar para obtener mejoras e ítems y prolonguen su supervivencia.
 %
 \begin{figure}[H]
   \centering
@@ -87,7 +87,7 @@
 \bigbreak
 \par Desafortunadamente, el prototipo presentó varias dificultades. En un principio, desarrollar el algoritmo mencionado anteriormente tomó entre 3 y 4 días. Idealmente, la mecánica principal se desarolla lo antes posible, de forma que se pueda validar si realmente es divertida o no. 
 \par Una vez se tuvo este sistema, se encontraron dificultades para generar enemigos que complementaran la mecánica principal. El mayor problema surgió de que se decidió que tanto los goblins como los enemigos recibieran daño al chocar entre ellos.
-\par Si bien el prototipo es jugable, se decidió no presentarlo en el evento. Se consideró que el juego no estaba en estado de ser probado, y que la mecánicas no eran lo suficientemente divertidas.
+\par Si bien el prototipo es jugable, se decidió no presentarlo en el evento. Se consideró que el juego no estaba en estado de ser probado, y que las mecánicas no eran lo suficientemente divertidas.
 %
 \begin{figure}[H]
   \centering
@@ -99,8 +99,8 @@
 %
 \subsubsection{Prototipo 3}
 \label{sec:prototype_3}
-El tercer prototipo se desarrolló para la \textit{Mega Jam de Invierno}, una jam de 3 días llevada a cabo en Mendoza \cite{MEGAJAMInvierno}. Como otras jams, el evento requería que el juego cumpliera con un temática, en este caso \textit{agua}.
-Debido al límite de tiempo, se decidió desarrollar una novela visual. Este tipo de juegos consiste mayormente en situaciones descriptas mediante texto, generalmente acompañadas por imagenes, donde el jugador puede realizar acciones como interactuar con objetos o moverse en el espacio. Además, estas obras suelen tener un fuerte énfasis en la historia y narrativa \cite{VisualNovel2025}.
+El tercer prototipo se desarrolló para la \textit{Mega Jam de Invierno}, una jam de 3 días llevada a cabo en Mendoza \cite{MEGAJAMInvierno}. Como otras jams, el evento requería que el juego cumpliera con una temática, en este caso \textit{agua}.
+Debido al límite de tiempo, se decidió desarrollar una novela visual. Este tipo de juegos consiste mayormente en situaciones descritas mediante texto, generalmente acompañadas por imágenes, donde el jugador puede realizar acciones como interactuar con objetos o moverse en el espacio. Además, estas obras suelen tener un fuerte énfasis en la historia y narrativa \cite{VisualNovel2025}.
 %
 \begin{figure}[H]
   \centering
@@ -127,16 +127,16 @@ Debido al límite de tiempo, se decidió desarrollar una novela visual. Este tip
 \end{itemize}
 %
 \subsubsection{Prototipo 4}
-El último prototipo se desarrolló durante la \textit{Club Jam 2025}, realizada del 2 al 15 de septiembre. El evento fue organizado por estudiantes de la carrera, y fue llevada a cabo en la Facultad de Ingieniería de la UNCUYO \cite{ClubJam2025}.
+El último prototipo se desarrolló durante la \textit{Club Jam 2025}, realizada del 2 al 15 de septiembre. El evento fue organizado por estudiantes de la carrera, y fue llevada a cabo en la Facultad de Ingeniería de la UNCUYO \cite{ClubJam2025}.
 \par El tema de esta jam fue \textit{viajes en el tiempo}. En base a esta idea se decidió hacer un juego de exploración y plataformas en 2D, donde el jugador debe investigar sus memorias para descubrir un intento de asesinato.
-\par El juego presenta mecánicas comunes de plataformeros, como plataformas, trampolines, y objetos que dañan al jugador, forzandolo a volver a un punto de control. Además, el jugador puede congelar y descongelar ciertos elementos del ambiente. Esto es util para evitar obstáculos o alcanzar ciertas plataformas.
+\par El juego presenta mecánicas comunes de plataformeros, como plataformas, trampolines, y objetos que dañan al jugador, forzándolo a volver a un punto de control. Además, el jugador puede congelar y descongelar ciertos elementos del ambiente. Esto es útil para evitar obstáculos o alcanzar ciertas plataformas.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{prototype_4_platforms.png}
   \caption{Captura de pantalla del juego, mostrando un trampolín (a la izquierda) y una plataforma congelada (a la derecha). Creada por autor.}
   \label{fig:x prototipo 4 plataformas}
 \end{figure}
-\par El juego también contiene escenas narrativas, las cuales estan dispersas en distintas partes de cada nivel. Estas escenas profundizan en la relación entre los protagonistas de la historia, y explican la razón del intento de asesinato.
+\par El juego también contiene escenas narrativas, las cuales están dispersas en distintas partes de cada nivel. Estas escenas profundizan en la relación entre los protagonistas de la historia, y explican la razón del intento de asesinato.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{prototype_4_narrative.png}
