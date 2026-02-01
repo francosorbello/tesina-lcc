@@ -1,1 +1,2 @@
 {"rule":"WHITESPACE_RULE","sentence":"^$"}
+{"rule":"MORFOLOGIK_RULE_ES","sentence":"^\\QA diferencia de otras jams, en esta no hubo una etapa de feedback.\\E$"}
